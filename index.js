@@ -8,7 +8,7 @@ function isSecretAddress (address) {
   var secret = false
   var secretCodes = [4, 6, 7]
 
-  if (address.Adresse && /hemmelig/i.test(address.Adresse)) {
+  if (address.Privatadr && /hemmelig/i.test(address.Privatadr)) {
     secret = true
   }
 
