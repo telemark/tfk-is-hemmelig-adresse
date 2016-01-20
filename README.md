@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-is-hemmelig-adresse/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-is-hemmelig-adresse?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-is-hemmelig-adresse
-Sjekker om en adresse er hemmelig enten via SPES-KD feltet fra dsf eller Privatadr fra Public360
+Sjekker om en adresse er hemmelig enten via SPES-KD feltet fra dsf eller PrivateAddress.StreetAddress fra Public360
 
 Modulen er først og fremst tilrettelagt for Telemark fylkeskommune, men kan sannsynligvis enkelt tilpasses også andre organisasjoner.
 
@@ -35,22 +35,26 @@ Send inn et adresseobject og få true eller false tilbake
 
 var isHemmelig = require('tfk-is-hemmelig-adresse')
 var address1 = {
-    Privatadr: 'Snippestadvegen 28, 1732 Konglebu'
+  PrivateAddress: {
+    StreetAddress: 'Snippestadvegen 28',
+  }
 }
 var address2 = {
-    Privatadr: 'hemmelig'
+  PrivateAddress: {
+    StreetAddress: '<HEMMELIG ADRESSE>',
+  }
 }
 var address3 = {
-    'SPES-KD': '0'
+  'SPES-KD': '0'
 }
 var address4 = {
-    'SPES-KD': '4'
+  'SPES-KD': '4'
 }
 var address5 = {
-    'SPES-KD': '6'
+  'SPES-KD': '6'
 }
 var address6 = {
-    'SPES-KD': '7'
+  'SPES-KD': '7'
 }
 
 console.log(isHemmelig(address1)) //=> false
