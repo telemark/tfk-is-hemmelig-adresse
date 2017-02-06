@@ -2,6 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-is-hemmelig-adresse/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-is-hemmelig-adresse?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-is-hemmelig-adresse
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-is-hemmelig-adresse.svg)](https://greenkeeper.io/)
 Sjekker om en adresse er hemmelig enten via SPES-KD feltet fra dsf eller PrivateAddress.StreetAddress fra Public360
 
 Modulen er først og fremst tilrettelagt for Telemark fylkeskommune, men kan sannsynligvis enkelt tilpasses også andre organisasjoner.
