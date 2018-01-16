@@ -10,13 +10,12 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.2.4"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install && node setup.js"
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
   },
   "keywords": [
     "Tfk",
@@ -25,14 +24,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/tfk-is-hemmelig-adresse.git"
+    "url": "git+https://github.com/telemark/tfk-is-hemmelig-adresse.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/tfk-is-hemmelig-adresse/issues"
+    "url": "https://github.com/telemark/tfk-is-hemmelig-adresse/issues"
   },
+  "homepage": "https://github.com/telemark/tfk-is-hemmelig-adresse#readme",
   "devDependencies": {
-    "coveralls": "^3.0.0",
-    "standard": "^10.0.2",
-    "tap": "^11.0.0"
+    "coveralls": "3.0.0",
+    "standard": "10.0.3",
+    "tap": "11.0.1"
   }
 }
