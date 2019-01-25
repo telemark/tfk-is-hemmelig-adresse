@@ -5,7 +5,7 @@ tap.throws(
   function () {
     isSecretAddress()
   },
-  {message: 'Missing required input: address object'},
+  { message: 'Missing required input: address object' },
   'Throws if address not supplied'
 )
 
